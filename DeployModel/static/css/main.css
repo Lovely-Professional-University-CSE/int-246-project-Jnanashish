@@ -17,3 +17,20 @@ html {
   min-height: 100vh;
   width: 100%;
 }
+.navbar {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+}
+.nav {
+  text-decoration: none;
+  padding: 12px 212px 12px 212px;
+  flex: 1;
+  color: white;
+  background-color: #003049;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.nav:hover {
+  background-color: #111111;
+}
