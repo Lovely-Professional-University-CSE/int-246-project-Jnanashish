@@ -35,8 +35,12 @@ def home(request):
     outt = output.tolist()
 
     scores = new_model.evaluate(inp, outt)
+    if scores[1] * 100 == 100.0:
+        ans = ">>> The User will Buy a Product 🛒"
+    else:
+        ans = "NO Revenue generated 🗋"
 
-    return render(request, "home.html", {"ans": scores[1] * 100})
+    return render(request, "home.html", {"ans": ans})
 
 
 def notebook(request):
