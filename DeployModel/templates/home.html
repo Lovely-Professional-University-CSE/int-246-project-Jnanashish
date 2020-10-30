@@ -26,6 +26,31 @@
         <a href="report"><span class="nav">Report</span></a>          
       </div>
       <h1>Name {{ans}}</h1>
+  
+      <form action="." method="POST">{% csrf_token %}
+        <input type="text" name="inp1" value="0">
+        <input type="text" name="inp2" value="0">
+        <input type="text" name="inp3" value="0">
+        <input type="text" name="inp4" value="1">
+        <input type="text" name="inp5" value="1">
+        <input type="text" name="inp6" value="0">
+        <input type="text" name="inp7" value="0.2">
+        <input type="text" name="inp8" value="0.2">
+        <input type="text" name="inp9" value="0">
+        <input type="text" name="inp10" value="0">
+        <input type="text" name="inp11" value="0">
+        <input type="text" name="inp12" value="0">
+        <input type="text" name="inp13" value="0">
+        <input type="text" name="inp14" value="0">
+        <input type="text" name="inp15" value="0">
+        <input type="text" name="inp16" value="0">
+        <input type="text" name="inp17" value="1">
+        <input type="text" name="guess">
+
+        <input type="submit" value="Click Here">
+
+      </form>
+
     </div>
   </body>
 </html>
