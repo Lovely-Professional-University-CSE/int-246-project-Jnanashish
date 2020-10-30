@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
+    
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
   </head>
@@ -26,31 +27,57 @@
         <a href="report"><span class="nav">Report</span></a>          
       </div>
       <h1>Name {{ans}}</h1>
-  
+      <div class="userform">
       <form action="." method="POST">{% csrf_token %}
-        <input type="text" name="inp1" value="0">
-        <input type="text" name="inp2" value="0">
-        <input type="text" name="inp3" value="0">
-        <input type="text" name="inp4" value="1">
-        <input type="text" name="inp5" value="1">
-        <input type="text" name="inp6" value="0">
-        <input type="text" name="inp7" value="0.2">
-        <input type="text" name="inp8" value="0.2">
-        <input type="text" name="inp9" value="0">
-        <input type="text" name="inp10" value="0">
-        <input type="text" name="inp11" value="0">
-        <input type="text" name="inp12" value="0">
-        <input type="text" name="inp13" value="0">
-        <input type="text" name="inp14" value="0">
-        <input type="text" name="inp15" value="0">
-        <input type="text" name="inp16" value="0">
-        <input type="text" name="inp17" value="1">
-        <input type="text" name="guess">
+        <label>Homepage:</label><br>
+        <input type="text" name="inp1" value="0"><br>
+        <label>Homepage _Duration:</label><br>
+        <input type="text" name="inp2" value="0"><br>
+        <label>Aboutus:</label><br>
+        <input type="text" name="inp3" value="0"><br>
+
+        <label>Aboutus_Duration:</label><br>
+        <input type="text" name="inp4" value="1"><br>
+        <label>Contactus:</label><br>
+
+        <input type="text" name="inp5" value="1"><br>
+        <label>Contactus_Duration:</label><br>
+        <input type="text" name="inp6" value="0"><br>
+
+        <label>BounceRates:</label><br>
+        <input type="text" name="inp7" value="0.2"><br>
+        <label>ExitRates:</label><br>
+        <input type="text" name="inp8" value="0.2"><br>
+        <label>PagesValues</label><br>
+        <input type="text" name="inp9" value="0"><br>
+        <label>SpecialDay</label><br>
+        <input type="text" name="inp10" value="0"><br>
+
+        <label>Month</label><br>
+        <input type="text" name="inp11" value="0"><br>
+        <label>OperatingSystems:</label><br>
+        <input type="text" name="inp12" value="0"><br>
+        <label>Browser:</label><br>
+
+        <input type="text" name="inp13" value="0"><br>
+        <label>Province:</label><br>
+
+        <input type="text" name="inp14" value="0"><br>
+        <label>TrafficType:</label><br>
+
+        <input type="text" name="inp15" value="0"><br>
+        <label>VisitorType:</label><br>
+
+        <input type="text" name="inp16" value="0"><br>
+        <label>Weekend:</label><br>
+
+        <input type="text" name="inp17" value="1"><br>
+        <input type="text" value="1" name="guess">
 
         <input type="submit" value="Click Here">
 
       </form>
-
+      </div>
     </div>
   </body>
 </html>
