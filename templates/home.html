@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online shoppers Intenstion</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="static/css/main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="title"><h1>ANN to predict Online Shoppers Intention</h1></div>
+      <div class="detail">
+        <h4>Jnanashish Handique</h4>
+        <h4>Regd.No: 11809624</h4>
+      </div>
+    </div>
+    <div class="body">
+      <div class="navbar">
+        <a href="#"><span class="nav">Home</span></a>
+        <a
+          href="https://nbviewer.jupyter.org/github/Lovely-Professional-University-CSE/int-246-project-Jnanashish/blob/main/keras-model.ipynb"
+        >
+          <span class="nav">Notebook</span></a
+        >
+        <a
+          href="https://docs.google.com/document/d/e/2PACX-1vTaaQG8jxjwd4cqzH9xwe_9kygbHmsH3idogtf2eyGT0ezAfmpfvw6-XJnbY2YbA2us_dNWNcycrs8O/pub"
+          ><span class="nav">Report</span></a
+        >
+      </div>
+      <div class="main_body">
+        <div class="userform">
+          <form  method="post" action="{{url_for('result')}}">
+            <label>Homepage:</label><br />
+            <input type="text" name="inp1" value="0" /><br />
+            <label>Homepage _Duration:</label><br />
+            <input type="text" name="inp2" value="0" /><br />
+            <label>Aboutus:</label><br />
+            <input type="text" name="inp3" value="0" /><br />
+
+            <label>Aboutus_Duration:</label><br />
+            <input type="text" name="inp4" value="1" /><br />
+            <label>Contactus:</label><br />
+
+            <input type="text" name="inp5" value="1" /><br />
+            <label>Contactus_Duration:</label><br />
+            <input type="text" name="inp6" value="0" /><br />
+
+            <label>BounceRates:</label><br />
+            <input type="text" name="inp7" value="0.2" /><br />
+            <label>ExitRates:</label><br />
+            <input type="text" name="inp8" value="0.2" /><br />
+            <label>PagesValues</label><br />
+            <input type="text" name="inp9" value="0" /><br />
+            <label>SpecialDay</label><br />
+            <input type="text" name="inp10" value="0" /><br />
+
+            <label>Month</label><br />
+            <input type="text" name="inp11" value="0" /><br />
+            <label>OperatingSystems:</label><br />
+            <input type="text" name="inp12" value="0" /><br />
+            <label>Browser:</label><br />
+
+            <input type="text" name="inp13" value="0" /><br />
+            <label>Province:</label><br />
+
+            <input type="text" name="inp14" value="0" /><br />
+            <label>TrafficType:</label><br />
+
+            <input type="text" name="inp15" value="0" /><br />
+            <label>VisitorType:</label><br />
+
+            <input type="text" name="inp16" value="0" /><br />
+            <label>Weekend:</label><br />
+
+            <input type="text" name="inp17" value="1" /><br />
+
+            <input
+              style="
+                width: 200px;
+                position: absolute;
+                left: 68%;
+                top: 29.5%;
+                color: white;
+                background-color: #2962ff;
+                font-size: 20px;
+                padding: 5px 20px;
+              "
+              type="submit"
+              value="Predict"
+            />
+            <input type="text" value="0" name="guess" />
+          </form>
+        </div>
+        <div class="notes">
+          <span class="msg-title">Will the user Buy a Product ?</span>
+          <h3 style="color: #2962ff">{{data}}</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
